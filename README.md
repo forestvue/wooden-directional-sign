@@ -23,14 +23,13 @@ Visual Studio Code나 Webstorm IDE 사용을 적극 권장합니다.
 
 1. Vue 프레임워크를 사용해 요청에 따라 페이지가 바뀌는 상황을 보여주시면 되겠습니다.
 다음 url 요청에 따라 메인 페이지의 일부분이 바뀌는 모습을 구현.
+  * / - (메인 페이지)
 
-/ - (메인 페이지)
+  * /about
 
-/about
+  * /contact
 
-/contact
-
-/user
+  * /user
 
 [싱글 파일 컴포넌트](https://kr.vuejs.org/v2/guide/single-file-components.html)
 
