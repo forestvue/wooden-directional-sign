@@ -3,8 +3,10 @@ import Router from 'vue-router'
 import HelloWorld from '@/views/Home'
 import About from '@/views/About'
 import Contact from '@/views/Contact'
-import User from '@/views/User'
+import User from '@/views/user/User'
 import Notfound from '@/views/Notfound'
+import Userinfo from '@/views/user/Userinfo'
+import Userlist from '@/views/user/Userlist'
 
 Vue.use(Router)
 
@@ -26,9 +28,22 @@ export default new Router({
       component: About
     },
     {
-      path: '/user/:id',
+      path: '/user',
       name: 'user',
-      component: User
+      component: User,
+      children: [
+        {
+          path: '',
+          name: 'userlist',
+          component: Userlist
+        },
+        {
+          path: '/user/:id',
+          name: 'userinfo',
+          component: Userinfo
+        }
+
+      ]
     },
     {
       path: '*',

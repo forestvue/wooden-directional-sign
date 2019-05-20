@@ -17,13 +17,14 @@ export default {
 
 <style scoped>
 .nav{
-  background-color: black;
+  background-color: #7a0000;
   color: white;
 }
 .nav ul{
   list-style: none;
 }
 .nav ul li{
+  margin: 5px;
   display: inline-block;
 }
 
@@ -31,13 +32,16 @@ export default {
   color: white;
   text-decoration: none;
 }
-
+.nav ul li a.active{
+  color: red;
+}
 .nav ul li a:link{
   color: white;
 }
 .nav ul li a:visited{
   color: white;
 }
+
 .nav ul li a:hover{
   color: white;
 }

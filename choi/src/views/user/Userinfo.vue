@@ -1,5 +1,8 @@
 <template>
-  <div>User {{ $route.params.id }}</div>
+  <div>
+    <h3>User information</h3>
+    <p>id : {{ $route.params.id }}</p>
+  </div>
 </template>
 
 <script>
