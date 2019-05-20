@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import fire
+
 import Nav from '@/common/Nav'
 export default {
   name: 'App',
