@@ -4,13 +4,28 @@
     <router-link to="/about">about</router-link>
     <router-link to="/contact">contact</router-link>
     <router-link to="/user">user</router-link>
+
+    <ul>
+      <span v-for="user in users" :key="user.id">
+        &nbsp;<router-link :to="'/user/'+user.id">{{user.id}}</router-link>
+      </span>
+    </ul>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: function () {
+    return {
+      users: [
+        {id: 1},
+        {id: 2},
+        {id: 3}
+      ]
+    }
+  }
 }
 </script>
 
